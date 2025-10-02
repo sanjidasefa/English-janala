@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enlish janala</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+  <main class="bg-slate-50">
+
+     <section>
+     <div class="text-center pt-10">
+       <h1 class="text-4xl  font-bold"><span class="text-sky-400">Let's </span> Learn Vocabularies</h1>
+       <div id="lesson" class="flex flex-wrap gap-5 justify-center my-6"></div>
+     </div>
+    </section>
+    <section class="">
+      <div  id="words" class="w-11/12 p-5 bg-blue-200 mx-auto rounded-xl my-20 gap-4 grid grid-cols-3 " >
+        <div class="col-span-full">
+          <div class="text-center  space-y-4  ">
+          <p class="text-blue-400 text-lg ">আপনি এখনো কোন Lesson Select করেন ন</p>
+          <h1 class="text-3xl font-bold">একটি Lesson Select করুন।</h1>
+        </div>
+        </div>
+      </div>
+
+        <dialog id="modal_1" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+          <div id="modal">
+
+          </div>
+          <div class="modal-action">
+        <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    </section>   
+  </main>
+
+   <script src="./index.js"></script>
+</body>
+</html>
