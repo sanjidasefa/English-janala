@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enlish janala</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enlish janala</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -31,44 +31,67 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-
-  <main class="bg-slate-50">
-
-     <section>
-     <div class="text-center pt-10">
-       <h1 class="text-4xl  font-bold"><span class="text-sky-400">Let's </span> Learn Vocabularies</h1>
-       <div id="lesson" class="flex flex-wrap gap-5 justify-center my-6"></div>
-     </div>
-    </section>
-    <section class="">
-      <div  id="words" class="w-11/12 p-5 bg-blue-200 mx-auto rounded-xl my-20 gap-4 grid grid-cols-3 " >
-        <div class="col-span-full">
-          <div class="text-center  space-y-4  ">
-          <p class="text-blue-400 text-lg ">আপনি এখনো কোন Lesson Select করেন ন</p>
-          <h1 class="text-3xl font-bold">একটি Lesson Select করুন।</h1>
+  </head>
+  <body>
+    <main class="bg-slate-50">
+      <section>
+        <div class="text-center pt-10">
+          <h1 class="text-4xl font-bold">
+            <span class="text-sky-400">Let's </span> Learn Vocabularies
+          </h1>
+          <div
+            id="lesson"
+            class="flex flex-wrap gap-5 justify-center my-6"
+          ></div>
         </div>
-        </div>
-      </div>
+      </section>
 
+      <section>
+       <div id="spinner" class="text-center hidden">
+       <span class="loading loading-bars loading-xl"></span>
+       </div>
+      </section>
+
+      <section>
+      <div class="join flex items-center justify-center">
+  <div>
+    <label class="input validator join-item border-slate-500">
+      <input id="type" type="text" placeholder="enter vokabulary" required />
+    </label>
+  </div>
+  <button id="search" class="btn text-white bg-slate-400 join-item">search</button>
+</div>
+      </section> 
+
+      <section>
+        <div
+          id="words"
+          class="w-11/12 p-5 bg-blue-200 mx-auto rounded-xl my-20 gap-4 grid grid-cols-3"
+        >
+          <div class="col-span-full">
+            <div class="text-center space-y-4">
+              <p class="text-blue-400 text-lg">
+                আপনি এখনো কোন Lesson Select করেন ন
+              </p>
+              <h1 class="text-3xl font-bold">একটি Lesson Select করুন।</h1>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="btn" onclick="my_modal.showModal()">open modal</button> -->
         <dialog id="modal_1" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
-          <div id="modal">
-
+            <div id="modal"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn btnColor btn-outline btn-primary">Close</button>
+              </form>
+            </div>
           </div>
-          <div class="modal-action">
-        <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
+        </dialog>
+      </section>
+    </main>
 
-    </section>   
-  </main>
-
-   <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
